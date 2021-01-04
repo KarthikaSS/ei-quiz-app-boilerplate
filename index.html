@@ -8,33 +8,35 @@
   <title>Quiz App</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
     type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
 </head>
-<header>
-    <h1>Sports Quiz</h1>
-    <p> This quiz is designed to test your Sports knowledge </p>
-  </header>
+
 <body>
-
-
-<main>
-</main>
-<div id ="result"></div>
-<div class="questionBox"></div>
-
-<div class="buttonContainer">
-  <button type="submit" class="start">Start</button>
-  <button type="submit" class="submit">Submit</button>
-  <button class="continue">Next Question</button>
-</div>
-<div>
-			<ul class="horizontal-list">
-				<li>Question: <span class="questionNumber">0</span>/5</li>
-				<li>Score: <span class="score">0</span></li>
-			</ul>
-		</div>
+  <header>
+    <div class = "group">
+      <div class = "item title">
+    <h1>Psychology Quiz</h1> </div></div>
+    <div class = "group">
+      <div class = "item center">
+    <img src = "images/brain.png" alt = "Brain drawing with lobes colored." width = 300px></div></div>
+  </header>
+  <main>
+    <h4 class = "progress"></h4>
+    <button class = "start">Start</button>
+    <h4 id = "currentQuestion" class = "js-quiz-question"></h4>
+    <div id = "options" class = "options">
+    <li class = "js-quiz-choice-a choice" id = "answerA"></li>
+    <li class = "js-quiz-choice-b choice" id = "answerB"></li>
+    <li class = "js-quiz-choice-c choice" id = "answerC"></li>
+    <li class = "js-quiz-choice-d choice" id = "answerD"></li>
+    </div>
+    <h4 class = "results"></h4>
+    <button id = "Submit" class = "submit">Submit</button>
+    <button id = "Next" class = "next">Next Question</button>
+   <h3 class = "finished">Congratulations! You finished the quiz.</h3>
+  </main>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
