@@ -117,19 +117,19 @@ $('.submit').click(function(event) {
    }else 
    {if(chosenAnswer === store.questions[counter].correctAnswer){
     score++;
-    $result.html("<span class='right'>That is correct!</span> The answer is " + shownCorrectAnswer + ".");
+    $('.results').html("<span class='right'>That is correct!</span> The answer is " + shownCorrectAnswer + ".");
     $('.results').show();
     console.log('correct');
     $('.next').show();
 
   } else{
-    $result.html("<span class='wrong'>That is wrong.</span> The correct answer is " + shownCorrectAnswer + ".");
+    $('.results').html("<span class='wrong'>That is wrong.</span> The correct answer is " + shownCorrectAnswer + ".");
     $('.results').show();
     $('.next').show();
   }
   questionNumber++;
   counter++
-  $progress.html("Your score is " + score + "/" + questionNumber);
+  $('.progress').html("Your score is " + score + "/" + questionNumber);
   $('.submit').hide();
   $('.next').show();
   }
